@@ -947,7 +947,7 @@ updateBuyLink();
     // Código que executa em ambos (desktop e mobile)
     if ($('.pagina-produto .produto div.principal .chave-digital').length === 0) {
         $('.pagina-produto .produto div.principal').prepend(`
-            <div class="chave-digital">Receba seu produto por E-mail</div>
+            <div class="chave-digital">Receba seu produto por E-mail ou WhatsApp.</div>
         `);
     }
 
