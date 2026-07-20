@@ -999,16 +999,21 @@ i.icon-instagram:before {
 }
 
 .listagem .listagem-item .preco-produto strong.preco-promocional {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 100%;
-   padding: 4px;
-   background: #9bc64c30;
    border-radius: 6px;
-   font-size: 18px;
+   font-size: 14px;
    font-weight: 600;
    box-sizing: border-box;
+   color: #E6FFB8 !important;
+   opacity: .8;
+}
+
+.listagem .preco-produto>div:nth-child(2) {
+   order: 3;
+}
+
+.listagem-item .preco-produto.destaque-avista {
+   display: flex;
+   flex-direction: column;
 }
 
 .listagem .mais-vendidos-destaque .listagem-item .preco-produto strong.preco-promocional {
