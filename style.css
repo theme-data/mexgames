@@ -1018,9 +1018,33 @@ i.icon-instagram:before {
    box-sizing: border-box;
 }
 
-.listagem .listagem-item .preco-produto strong {
+.listagem-item .preco-a-partir, .listagem-item .preco-a-partir * {
+   font-size: 14px!important;
+   font-weight: 600!important;
+   opacity: .8;
+   color: #E6FFB8!important;
+}
+
+.listagem .listagem-item .preco-parcela strong, .listagem .listagem-item .preco-parcela *, .listagem .listagem-item .preco-parcela {
+   font-size: 12px;
+   color: #fff!important;
+   font-weight: 400;
+}
+
+.listagem-item .desconto-a-vista {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 4px;
+   color: #9BC64C;
+   border-radius: 6px;
+   background: #9BC64C20;
+   height: 35px;
+}
+
+.listagem .listagem-item .desconto-a-vista strong {
    font-size: 18px;
-   font-weight: 500;
+   font-weight: 600;
 }
 
 .listagem .listagem-item .nome-produto, .listagem .listagem-item .preco-produto strong {
@@ -7956,19 +7980,6 @@ a.whatsapp-float-btn:before {
 	border: 1px solid #d8d8d8;
 	margin-bottom: 20px;
 	cursor: default;
-}
-
-.cn-redeem-code a {
-	position: relative;
-	background: #e9222b;
-	width: fit-content;
-	padding: 0;
-	box-sizing: border-box;
-	display: flex;
-	align-items: center;
-	padding: 0 20px;
-	border-radius: 6px;
-	height: 36px;
 }
 
 @media screen and (max-width: 768px) {
