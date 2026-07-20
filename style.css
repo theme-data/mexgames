@@ -5325,8 +5325,8 @@ h2.bn-featured-title {
 
 .produto .conteiner-imagem img {
    max-height: 100%;
-   width: fit-content!important;
-   max-width: fit-content !important;
+   width: auto;
+   max-width: inherit;
 }
 
 .atributos .atributo-item span {
@@ -7070,8 +7070,7 @@ div#login-content > .identificacao {
    border: 0;
    padding: 0;
    margin-bottom: 20px;
-   width: fit-content !important;
-    max-width: fit-content;
+   width: auto;
 }
 
 .share-menu {
