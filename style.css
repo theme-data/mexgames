@@ -7987,6 +7987,15 @@ a.whatsapp-float-btn:before {
 
 @media screen and (min-width: 768px) {
 
+   .pagina-busca .coluna.span3 {
+      display: none;
+  }
+  
+  .pagina-busca .conteudo.span9 {
+      width: 100%;
+      margin: 0;
+  }
+
    .mini-banner {
       display: flex;
       gap: 20px;
