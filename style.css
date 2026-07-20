@@ -7618,33 +7618,33 @@ hr {
 }
 
 /* PlayStation */
-.menu.superior > .nivel-um > li.categoria-id-22673229,
-.menu.superior > .nivel-um > li.categoria-id-22673218 {
+.menu.superior > .nivel-um > li.categoria-id-23410121,
+.menu.superior > .nivel-um > li.categoria-id-23410120 {
 	--icon-normal: url(https://cdn.awsli.com.br/2727/2727537/arquivos/psn.svg);
 	--icon-hover: url(https://cdn.awsli.com.br/2727/2727537/arquivos/psn.svg);
 }
 
 /* Pré-vendas */
-.menu.superior > .nivel-um > li.categoria-id-22673207 {
+.menu.superior > .nivel-um > li.categoria-id-23410123 {
 	--icon-normal: url(https://cdn.awsli.com.br/2727/2727537/arquivos/ticket.svg);
 	--icon-hover: url(https://cdn.awsli.com.br/2727/2727537/arquivos/ticket.svg);
 }
 
 /* XBOX */
-.menu.superior > .nivel-um > li.categoria-id-22673250,
-.menu.superior > .nivel-um > li.categoria-id-22673203 {
+.menu.superior > .nivel-um > li.categoria-id-23410117,
+.menu.superior > .nivel-um > li.categoria-id-23410115 {
 	--icon-normal: url(https://cdn.awsli.com.br/2727/2727537/arquivos/xbox.svg);
 	--icon-hover: url(https://cdn.awsli.com.br/2727/2727537/arquivos/xbox.svg);
 }
 
 /* Assinaturas */
-.menu.superior > .nivel-um > li.categoria-id-22673191 {
+.menu.superior > .nivel-um > li.categoria-id-23410124 {
 	--icon-normal: url(https://cdn.awsli.com.br/2727/2727537/arquivos/gift.svg);
 	--icon-hover: url(https://cdn.awsli.com.br/2727/2727537/arquivos/gift.svg);
 }
 
 /* Jogos */
-.menu.superior > .nivel-um > li.categoria-id-18566102 {
+.menu.superior > .nivel-um > li.categoria-id-23428405 {
 	--icon-normal: url(https://yiazmat1994.github.io/playce/assets/menu-icons/gamepad-white.png);
 	--icon-hover: url(https://yiazmat1994.github.io/playce/assets/menu-icons/gamepad.png);
 }

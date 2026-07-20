@@ -1,0 +1,336 @@
+<style>
+    .slider-title {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        color: #333;
+    }
+    
+    .rating-slider {
+        margin-bottom: 100px;
+    }
+    
+    .pagina-carrinho .rating-slider {
+        display: none!important;
+    }
+
+    .slider-container {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+        flex: 0 0 25%; /* 4 slides por vez */
+        position: relative;
+        padding-top: 44.444%; /* Proporção 9:16 para 1/4 da largura */
+    }
+
+    .slide img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .slide .youtube-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slide .youtube-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    .slider-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        z-index: 10;
+        font-size: 1.5rem;
+        transition: opacity 0.3s ease;
+    }
+
+    .slider-button:disabled {
+        opacity: 0.3;
+        cursor: not-allowed;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+    }
+
+    .slider-dots {
+        position: absolute;
+        bottom: 1rem;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.5rem;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.5);
+        cursor: pointer;
+    }
+
+    .dot.active {
+        background: white;
+    }
+
+    /* Media query para tablets */
+    @media (max-width: 1024px) {
+        .slide {
+            flex: 0 0 33.333%; /* 3 slides em tablets */
+            padding-top: 59.259%; /* Proporção 9:16 para 1/3 da largura */
+        }
+    }
+
+    /* Media query para celulares */
+    @media (max-width: 768px) {
+        .slide {
+            flex: 0 0 50%; /* 2 slides em celulares */
+            padding-top: 88.889%; /* Proporção 9:16 para 1/2 da largura */
+        }
+    }
+</style>
+
+<script>
+    // Criar e inserir a estrutura do slider
+    $(document).ready(function() {
+        // Criar a estrutura do slider
+        const sliderHTML = `
+            <div class="rating-slider">
+                <h2 class="slider-title">Opinião de quem já comprou na loja</h2>
+                <div class="slider-container">
+                    <div class="slider">
+                        <!-- Os slides serão inseridos via JavaScript -->
+                    </div>
+                    <button class="slider-button prev">❮</button>
+                    <button class="slider-button next">❯</button>
+                    <div class="slider-dots"></div>
+                </div>
+            </div>
+        `;
+
+        // Inserir o slider antes da vitrine
+        $(sliderHTML).insertBefore('#rodape');
+
+        // Configuração dos slides
+        const slides = [
+            {
+                type: 'image',
+                url: "https://cdn.awsli.com.br/2833/2833026/arquivos/dp-1.jpg",
+                alt: "Depoimento"
+            },
+            {
+                type: 'image',
+                url: "https://cdn.awsli.com.br/2833/2833026/arquivos/dp-3.jpg",
+                alt: "Depoimento"
+            },
+            {
+                type: 'image',
+                url: "https://cdn.awsli.com.br/2833/2833026/arquivos/dp-4.jpg",
+                alt: "Depoimento"
+            },
+            {
+                type: 'image',
+                url: "https://cdn.awsli.com.br/2833/2833026/arquivos/dp-5.jpg",
+                alt: "Depoimento"
+            },
+            {
+                type: 'image',
+                url: "https://cdn.awsli.com.br/2833/2833026/arquivos/dp-6.jpg",
+                alt: "Depoimento"
+            },
+            {
+                type: 'image',
+                url: "https://cdn.awsli.com.br/2833/2833026/arquivos/dp-7.jpg",
+                alt: "Depoimento"
+            },
+            {
+                type: 'image',
+                url: "https://cdn.awsli.com.br/2833/2833026/arquivos/dp-8.jpg",
+                alt: "Depoimento"
+            },
+            {
+                type: 'image',
+                url: "https://cdn.awsli.com.br/2833/2833026/arquivos/dp-9.jpg",
+                alt: "Depoimento"
+            }
+        ];
+
+        // Inicializar o slider
+        const slider = document.querySelector('.slider');
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const dotsContainer = document.querySelector('.slider-dots');
+        
+        // Função para criar os slides
+        function createSlides() {
+            // Limpar o slider
+            slider.innerHTML = '';
+
+            // Adicionar slides na ordem definida
+            slides.forEach(slide => {
+                const slideElement = document.createElement('div');
+                slideElement.className = 'slide';
+
+                if (slide.type === 'image') {
+                    slideElement.innerHTML = `
+                        <img src="${slide.url}" alt="${slide.alt}">
+                    `;
+                } else if (slide.type === 'video') {
+                    slideElement.innerHTML = `
+                        <div class="youtube-container">
+                            <iframe src="https://www.youtube.com/embed/${slide.id}" 
+                                    title="${slide.title}"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                    `;
+                }
+
+                slider.appendChild(slideElement);
+            });
+        }
+
+        // Criar os slides iniciais
+        createSlides();
+
+        const slideElements = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        const slideCount = slideElements.length;
+        let slidesPerView = window.innerWidth > 1024 ? 4 : window.innerWidth > 768 ? 3 : 2;
+
+        // Criar dots
+        const totalGroups = Math.ceil(slideCount / slidesPerView);
+        for (let i = 0; i < totalGroups; i++) {
+            const dot = document.createElement('div');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => goToSlide(i * slidesPerView));
+            dotsContainer.appendChild(dot);
+        }
+
+        const dots = document.querySelectorAll('.dot');
+
+        function updateSlider() {
+            const offset = currentSlide * (100 / slidesPerView);
+            slider.style.transform = `translateX(-${offset}%)`;
+            
+            const activeDot = Math.floor(currentSlide / slidesPerView);
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === activeDot);
+            });
+
+            // Atualizar estado dos botões
+            prevButton.disabled = currentSlide === 0;
+            nextButton.disabled = currentSlide + slidesPerView >= slideCount;
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateSlider();
+        }
+
+        function nextSlide() {
+            if (currentSlide + 1 < slideCount) {
+                currentSlide++;
+                updateSlider();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide - 1 >= 0) {
+                currentSlide--;
+                updateSlider();
+            }
+        }
+
+        // Event listeners
+        nextButton.addEventListener('click', nextSlide);
+        prevButton.addEventListener('click', prevSlide);
+
+        // Atualizar slides por view quando a janela for redimensionada
+        window.addEventListener('resize', () => {
+            const oldSlidesPerView = slidesPerView;
+            slidesPerView = window.innerWidth > 1024 ? 4 : window.innerWidth > 768 ? 3 : 2;
+            
+            if (oldSlidesPerView !== slidesPerView) {
+                currentSlide = Math.floor(currentSlide / oldSlidesPerView) * slidesPerView;
+                updateSlider();
+            }
+        });
+
+        // Autoplay (opcional)
+        let autoplayInterval = setInterval(() => {
+            if (!nextButton.disabled) {
+                nextSlide();
+            } else {
+                clearInterval(autoplayInterval);
+            }
+        }, 5000);
+
+        // Pausar autoplay quando o mouse estiver sobre o slider
+        slider.addEventListener('mouseenter', () => {
+            clearInterval(autoplayInterval);
+        });
+
+        slider.addEventListener('mouseleave', () => {
+            if (!nextButton.disabled) {
+                autoplayInterval = setInterval(() => {
+                    if (!nextButton.disabled) {
+                        nextSlide();
+                    } else {
+                        clearInterval(autoplayInterval);
+                    }
+                }, 5000);
+            }
+        });
+
+        // Inicializar estado dos botões
+        updateSlider();
+    });
+</script>
+
+<script>
+$(document).ready(function(){
+    
+$('.pagina-produto .produto>.row-fluid:first-child').after(`
+<div class="image-instructions">
+    <img src="https://cdn.awsli.com.br/2833/2833026/arquivos/midia-digital-img-1140x360.png"/>
+    <img src="https://cdn.awsli.com.br/2833/2833026/arquivos/primaria-e-secundaria-img-a570xl1140.png"/>
+</div>
+`);
+    
+});
+    
+</script>
