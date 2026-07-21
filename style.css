@@ -6308,6 +6308,12 @@ input#id_politica_privacidade {
 
 @media screen and (min-width: 768px) {
 
+   .listagem .listagem-item {
+      min-height: 513px;
+      box-sizing: border-box;
+      justify-content: space-between;
+  }
+
    .span12.produto {
       z-index: 1;
       position: relative;
@@ -9438,4 +9444,61 @@ tr.cart-product {
 
 .carrinho-checkout .caixa-sombreada.borda-principal {
 	background: #f1f1f1;
+}
+
+.pagina-pagina .conteudo div span, .pagina-pagina .conteudo div p, .pagina-pagina .conteudo div h1, .pagina-pagina .conteudo div strong, .pagina-pagina .conteudo div b {
+   color: #fff !important;
+   background: none !important;
+}
+
+.listagem-item .desconto-a-vista:before {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background: url(https://cdn.awsli.com.br/2833/2833026/arquivos/pix.svg) center no-repeat;
+}
+
+.pagina-produto .produto .preco-promocional {
+   color: #E6FFB8!important;
+   opacity: .7;
+}
+
+.pagina-produto .produto .desconto-a-vista strong {
+   font-size: 32px!important;
+   font-weight: 600;
+}
+
+.pagina-produto .produto .desconto-a-vista {
+   font-size: 14px;
+   font-weight: 500;
+   color: #9BC64C!important;
+   line-height: normal;
+   padding: 4px 20px;
+   display: flex;
+   align-items: center;
+   gap: 4px;
+   width: fit-content;
+   margin: 10px auto 0;
+   border: 1px solid rgba(255,255,255,.1);
+   border-radius: 5px;
+}
+
+.produto .acoes-produto .preco-parcela {
+   font-size: 16px;
+   font-weight: normal;
+   order: 3;
+}
+
+.produto .acoes-produto .preco-parcela strong {
+   color: var(--color-primary);
+}
+
+.pagina-produto .produto .acoes-produto > div > div {
+   display: flex;
+   flex-direction: column;
+}
+
+.pagina-produto .produto .acoes-produto > div > div > div:nth-child(2) {
+   order: 3;
+   margin-top: 10px;
 }
