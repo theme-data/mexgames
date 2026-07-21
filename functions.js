@@ -1236,11 +1236,11 @@ $(document).ready(function(){
                 }
             });
     
-            const $primaria = $('.atributo-item.primaria');
+            // const $primaria = $('.atributo-item.primaria');
     
-            if ($primaria.length && !$primaria.closest('li').hasClass('active')) {
-                $primaria.trigger('click');
-            }
+            // if ($primaria.length && !$primaria.closest('li').hasClass('active')) {
+            //     $primaria.trigger('click');
+            // }
         }
     
         configurarLicencas();
