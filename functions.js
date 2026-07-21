@@ -218,7 +218,7 @@ tagsProdutos.forEach(function(produto) {
 
 // Defina os arrays conforme necessário
 var numerosBanner = [1, 2, 3]; // Exemplo: [1, 2] para o primeiro e segundo banner, etc.
-var idsVitrine = ['23410123', '23410121', '23410115']; // Exemplo: ['23507360', '23507361']
+var idsVitrine = ['23410120', '23410121', '23410115']; // Exemplo: ['23507360', '23507361']
 
 // Seleciona todos os <a> banners na ordem dentro do .banner.tarja
 var $bannersTarja = $('.banner.tarja > a');
@@ -1402,7 +1402,7 @@ $(document).ready(function () {
   });
   
 
-  $('.pagina-inicial .vitrine-23428405').before(`
+  $('.pagina-inicial .vitrine-23410123').before(`
     <div class="how-works">
     
         <div class="h-video">
