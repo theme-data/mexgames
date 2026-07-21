@@ -5512,7 +5512,7 @@ h2.bn-featured-title {
 .account-menu .myaccount, 
 .account-menu .myorders {
    padding: 4px 0;
-   color: var(--color-black);
+   color: var(--color-white);
    display: flex;
    align-items: center;
    justify-content: flex-start;
@@ -5544,7 +5544,7 @@ h2.bn-featured-title {
 
 .hello-menu a {
    font-size: 14px;
-   color: #000;
+   color: var(--color-white);
    font-weight: 500;
 }
 
