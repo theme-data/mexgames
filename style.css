@@ -4373,6 +4373,13 @@ button.about-banner-btn {
    align-items: center;
    padding: 16px;
    border: 1px solid #9BC64C30;
+   min-height: auto;
+   justify-content: normal;
+}
+
+.mais-vendidos-destaque .listagem-item .desconto-a-vista {
+   width: fit-content;
+   padding: 0 20px;
 }
 
 .titulo-categoria.mais-vendidos-destaque strong:before {
@@ -4556,6 +4563,10 @@ input[type="password"] {
 /* Código Mobile */
 
 @media screen and (max-width: 768px) {
+
+   .listagem .listagem-item .preco-produto strong {
+      font-size: 14px;
+   }
 
    #barraNewsletter.posicao-rodape {
       display: block!important;
