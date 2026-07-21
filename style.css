@@ -5447,7 +5447,7 @@ h2.bn-featured-title {
    position: fixed;
    left: 0;
    top: 0;
-   background: #fff;
+   background: var(--color-secondary);
    border: 0;
    height: 100dvh;
    overflow-y: scroll;
@@ -5553,7 +5553,7 @@ h2.bn-featured-title {
    gap: 10px;
    display: flex;
    flex-direction: column;
-   border-bottom: 1px solid #E5E5E5;
+   border-bottom: 1px solid #E5E5E520;
 }
 
 .account-menu .myorders:before {
@@ -5574,20 +5574,20 @@ h2.bn-featured-title {
 
 .hello-menu {
    font-size: 16px;
-   color: var(--color-black);
+   color: var(--color-white);
    display: flex;
    gap: 8px;
    align-items: center;
    padding: 16px 24px;
-   border-bottom: 1px solid #E5E5E5;
+   border-bottom: 1px solid #E5E5E520;
 }
 
 .menu.superior .nivel-dois li a, .menu.lateral .nivel-dois li a {
-   color: var(--color-black);
+   color: var(--color-white);
 }
 
 .menu.superior .nivel-um .titulo, .menu.lateral .nivel-um .titulo {
-   color: var(--color-black);
+   color: var(--color-white);
    font-size: 16px;
 }
 
