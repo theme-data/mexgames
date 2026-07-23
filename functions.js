@@ -1,14 +1,5 @@
 $(document).ready(function() {
 
-    $(
-        '.pagina-categoria .ordenar-listagem h1.titulo'
-      ).prepend(`
-        <div class="coupon-cat">
-          <span>-5% OFF</span>
-          <strong>Cupom MEX5</strong>
-        </div>
-      `);
-
 // alterações gerais
 $('.pagina-inicial .secao-banners .conteiner').append($('.mini-banner'));
 $('.selos li:first-child img').attr('src','https://cdn.awsli.com.br/2830/2830294/arquivos/site-protegido.svg');
@@ -1396,9 +1387,12 @@ $(document).ready(function () {
     $('tr[data-produto-id]').addClass('cart-product');
     $('.pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho').prepend(`<h3>Meu carrinho </h3>`);
     
-     // =====================================================
-    // ADICIONA BOX SURPRESA
-    // =====================================================
+    $('.pagina-categoria .ordenar-listagem h1.titulo').prepend(`
+        <div class="coupon-cat">
+          <span>-5% OFF</span>
+          <strong>Cupom MEX5</strong>
+        </div>
+      `);
   
   });
   
