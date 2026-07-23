@@ -9581,3 +9581,75 @@ div#modal-pagamento.ativo {
     display: block;
 }
 
+/* BGS nas categorias */
+
+.coupon-cat {
+	display: flex;
+	padding: 4px 20px;
+	background: #9bc64c20;
+	border-radius: 6px;
+	font-size: 18px;
+	line-height: normal;
+	width: fit-content;
+}
+
+.coupon-cat span {
+	color: var(--color-primary);
+}
+
+.coupon-cat strong {
+	padding-left: 12px;
+	border-left: 1px solid #ffffff20;
+	margin-left: 12px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+
+@media screen and (min-width: 768px) {
+	
+.conteudo .ordenar-listagem.topo .row-fluid .span6 {
+    display: none;
+}
+
+/* PlayStation */ 
+.pagina-categoria.categoria-23410121,
+.pagina-categoria.categoria-23410120 {
+	background: var(--bg-store-color) url(https://cdn.awsli.com.br/2833/2833026/arquivos/bg-ps.jpg) top center no-repeat;
+	background-size: 100%;
+}
+
+/* Xbox */ 
+.pagina-categoria.categoria-23410115,
+.pagina-categoria.categoria-23410117 {
+	background: var(--bg-store-color) url(https://cdn.awsli.com.br/2833/2833026/arquivos/bg-xbox.jpg) top center no-repeat;
+	background-size: 100%;
+}
+
+/* Assinaturas */ 
+.pagina-categoria.categoria-23410124 {
+	background: var(--bg-store-color) url(https://cdn.awsli.com.br/2833/2833026/arquivos/bg-card.jpg) top center no-repeat;
+	background-size: 100%;
+}
+
+/* Pré-vendas */ 
+.pagina-categoria.categoria-23410123 {
+	background: var(--bg-store-color) url(https://cdn.awsli.com.br/2833/2833026/arquivos/bg-prevenda.jpg) top center no-repeat;
+	background-size: 100%;
+}
+
+.pagina-categoria.categoria-23410121 .secao-principal,
+.pagina-categoria.categoria-23410120 .secao-principal,
+.pagina-categoria.categoria-23410115 .secao-principal,
+.pagina-categoria.categoria-23410117 .secao-principal,
+.pagina-categoria.categoria-23410124 .secao-principal,
+.pagina-categoria.categoria-23410123 .secao-principal {
+		margin-top: 100px;
+}
+
+.pagina-categoria .conteudo h1 {
+	font-size: 48px;
+	line-height: 72px;
+}
+	
+}
