@@ -6542,7 +6542,7 @@ form#formCalcularFrete {
    border: 0;
 }
 
-.tabela-carrinho thead tr {
+.pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho thead tr {
    border: 0;
    width: 100%;
    max-width: 100%;
