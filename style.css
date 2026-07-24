@@ -9717,3 +9717,9 @@ div#modal-pagamento.ativo {
    right: 0;
    top: 0;
 }
+
+.pagina-pedido-finalizado .caixa-dados ul li *,
+.pagina-pedido-finalizado .caixa-dados legend,
+.pagina-pedido-finalizado .caixa-dados ul.caixa-info li {
+   color: #000;
+}
