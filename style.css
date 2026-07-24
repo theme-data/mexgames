@@ -3259,6 +3259,8 @@ a {
    width: fit-content;
    top: 160px;
    position: sticky;
+   width: 100%;
+   max-width: 420px;
 }
 
 .produto>.row-fluid:nth-child(2) > div.span7 {
@@ -6546,7 +6548,7 @@ form#formCalcularFrete {
    max-width: 100%;
    display: flex;
    box-sizing: border-box;
-   padding: 20px;
+   padding: 12px 20px;
 }
 
 .tabela-carrinho thead * {
@@ -8794,16 +8796,12 @@ div#formasEnvio {
   margin-left: 10px;
 }
 
-.pagina-carrinho:not(.carrinho-checkout) .valores-descontos {
-  display: none;
-}
-
 .pagina-carrinho:not(.carrinho-checkout) .cupom-valor {
   padding: 10px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .pagina-carrinho:not(.carrinho-checkout) .cart-coupon {
@@ -9704,4 +9702,13 @@ div#modal-pagamento.ativo {
    .cart-resume-total .descontos.avista, .cart-resume-total .descontos.parcelas {
       justify-content: center;
   }
+}
+
+.atributos .atributo-item:not(.primaria, .secundaria)::after {
+   content: "Jogue em seu perfil";
+   font-size: 12px;
+   display: block;
+   font-weight: normal;
+   line-height: normal;
+   color: #fff;
 }
