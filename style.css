@@ -6907,6 +6907,7 @@ form#formCalcularFrete {
    border: 1px solid #ffffff20;
    border-radius: 8px;
    box-shadow: none;
+   background: #1a2210;
 }
 
 .pagina-conta-endereco .breadcrumbs {
@@ -7207,13 +7208,14 @@ div#login-content > .identificacao {
    display: flex;
    align-items: center;
    gap: 12px;
-   color: #000;
+   color: #fff;
 }
 
 .conta-menu .nome-usuario {
    padding: 0;
    font-size: 20px;
    font-weight: 500;
+   color: #fff;
 }
 
 .conta-menu .nome-usuario i {
@@ -7223,16 +7225,17 @@ div#login-content > .identificacao {
 .conta-menu .menu-simples li a:hover {
    background: #f1f1f1;
    border-radius: 6px;
+   color: #000;
 }
 
 .conta-menu .menu-simples li a:hover i {
-   color: #000;
+   color: #fff;
 }
 
 .caixa-dados ul li * {
    font-size: 14px;
    font-weight: normal;
-   color: #000;
+   color: #fff;
 }
 
 .pagina-conta .secao-principal {
@@ -7304,6 +7307,7 @@ div#login-content > .identificacao {
    padding: 32px;
    box-shadow: none;
    border-radius: 8px;
+   background: #1C2210;
 }
 
 .caixa-dados {
@@ -7330,6 +7334,7 @@ div#login-content > .identificacao {
    align-items: center;
    background: var(--color-secondary);
    width: fit-content;
+   color: #fff!important;
 }
 
 .abas-conteudo .acao-editar .botao.principal i, .abas-conteudo .acao-editar .botao i {
@@ -7345,6 +7350,7 @@ div#login-content > .identificacao {
    border: 1px solid #d8d8d8;
    border-radius: 8px 8px 0 0;
    margin: 0;
+   color: #fff;
 }
 
 .caixa-dados {
