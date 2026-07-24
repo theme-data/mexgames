@@ -9669,3 +9669,39 @@ div#modal-pagamento.ativo {
 }
 	
 }
+
+/* Ajustes cart */
+
+.cart-resume-total .descontos.avista span, .cart-resume-total .descontos.avista strong {
+   color: #9BC64D;
+}
+
+.cart-resume-total .descontos.avista strong {
+   font-size: 18px;
+   font-weight: 600;
+}
+
+.cart-resume-total .descontos.avista strong:last-child {
+   background: #FBB832;
+   color: #000;
+   font-size: 12px;
+   padding: 4px 9px;
+   border-radius: 4px;
+}
+
+.cart-resume-total .descontos.avista {
+   display: flex;
+   padding: 0 24px;
+}
+
+
+.cart-resume-total .descontos.parcelas {
+   display: flex;
+   padding: 16px 24px;
+}
+
+@media screen and (max-width: 768px) {
+   .cart-resume-total .descontos.avista, .cart-resume-total .descontos.parcelas {
+      justify-content: center;
+  }
+}
