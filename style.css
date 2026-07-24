@@ -9711,4 +9711,9 @@ div#modal-pagamento.ativo {
    font-weight: normal;
    line-height: normal;
    color: #fff;
+   width: 100%;
+   box-sizing: border-box;
+   position: relative;
+   right: 0;
+   top: 0;
 }
