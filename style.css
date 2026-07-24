@@ -6536,7 +6536,7 @@ form#formCalcularFrete {
 }
 
 .tabela-carrinho thead {
-   background: #f1f1f1;
+   background: #f1f1f120;
    border: 0;
 }
 
@@ -6551,8 +6551,12 @@ form#formCalcularFrete {
 }
 
 .tabela-carrinho tbody tr {
-   background: var(--color-white);
+   background: #ffffff10;
    border: 0;
+}
+
+.css-1aalrdh-StyledLabel-labelStyles {
+   color: #fff;
 }
 
 .tabela-carrinho .produto-info ul {
