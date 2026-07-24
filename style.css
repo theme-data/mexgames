@@ -6536,16 +6536,21 @@ form#formCalcularFrete {
 }
 
 .tabela-carrinho thead {
-   background: #f1f1f120;
+   background: #171B0F;
    border: 0;
 }
 
 .tabela-carrinho thead tr {
    border: 0;
+   width: 100%;
+   max-width: 100%;
+   display: flex;
+   box-sizing: border-box;
+   padding: 20px;
 }
 
 .tabela-carrinho thead * {
-   color: var(--color-black);
+   color: var(--color-white);
    font-weight: 500;
    font-size: 14px;
 }
@@ -7057,6 +7062,18 @@ div#login-content > .identificacao {
 }
 
 @media screen and (max-width: 768px) {
+
+
+tr.bg-dark.tr-checkout-total {
+   width: 100%;
+   display: flex !important;
+   padding: 0 0 20px;
+   box-sizing: border-box;
+}
+
+.carrinho-checkout .conteiner-principal #corpo .conteiner {
+   padding: 16px;
+}
 
    #cabecalho > .conteiner > .row-fluid {
       padding: 0;
@@ -8434,7 +8451,7 @@ div#formasEnvio {
 }
 
 .pagina-carrinho .cabecalho-interno .titulo {
-   color: var(--color-black);
+   color: var(--color-white);
 }
 
 /* passa automático os benefícios no celular */
@@ -8552,7 +8569,7 @@ div#formasEnvio {
 .pagina-carrinho:not(.carrinho-checkout)
   .finalizar-compra
   > .cabecalho-interno
-  .titulo {
+  .titulo small {
   display: none;
 }
 
@@ -8892,6 +8909,7 @@ div#formasEnvio {
   text-align: left;
   margin-top: 0;
   margin-bottom: 20px;
+  display: none;
 }
 
 .pagina-carrinho:not(.carrinho-checkout) .resume-toggle-coupon i {
@@ -9056,22 +9074,18 @@ div#formasEnvio {
      align-items: center;
      width: 100%;
      padding: 20px;
-     background: rgba(0, 0, 0, 0.2) !important;
+     background: #1C2210;
      box-sizing: border-box;
   }
 
   .pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho {
    display: flex;
    flex-direction: column;
-   padding: 32px;
+   padding: 0px;
    border-radius: 16px;
    height: fit-content;
    background: #1C2210;
    border: 0;
-  }
-
-  .pagina-carrinho:not(.carrinho-checkout) .tabela-carrinho > thead {
-     display: none;
   }
 
   .pagina-carrinho:not(.carrinho-checkout)
