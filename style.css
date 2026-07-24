@@ -6772,15 +6772,15 @@ form#formCalcularFrete {
 
 .campos-pedido .caixa-sombreada, .campos-pedido .acao-editar button:first-child {
    border-radius: var(--border-radius-md);
-   background: var(--color-white);
+   background: #1c2210;
    padding: 24px;
    color: #fff;
    box-shadow: none;
-   border: 1px solid #d8d8d8;
+   border: 1px solid #d8d8d820;
 }
 
 .campos-pedido .caixa-sombreada * {
-   color: var(--color-black);
+   color: var(--color-white);
 }
 
 .caixa-info {
@@ -7387,7 +7387,7 @@ div#login-content > .identificacao {
 
 .pagina-pedido-listar .text-center strong {
    font-size: 16px;
-   color: #000;
+   color: #fff;
    font-weight: normal;
 }
 
@@ -9453,16 +9453,8 @@ tr.cart-product {
     }
 }
 
-.carrinho-checkout {
-	background: #fff;
-}
-
 .carrinho-checkout #cabecalho {
 	background: #1c2210;
-}
-
-.carrinho-checkout .caixa-sombreada.borda-principal {
-	background: #f1f1f1;
 }
 
 .pagina-pagina .conteudo div span, .pagina-pagina .conteudo div p, .pagina-pagina .conteudo div h1, .pagina-pagina .conteudo div strong, .pagina-pagina .conteudo div b {
