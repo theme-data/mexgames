@@ -7231,6 +7231,7 @@ tr.bg-dark.tr-checkout-total {
 
 .conta-menu * {
    border: 0!important;
+   color: #fff;
 }
 
 .conta-menu li.divisor {
@@ -9777,5 +9778,8 @@ div#modal-pagamento.ativo {
 }
 
 .popover {
-   border: 1px solid #ffffff10!important;
+   border: 0!important;
+   background: none;
+   border-radius: 8px;
+   overflow: hidden;
 }
