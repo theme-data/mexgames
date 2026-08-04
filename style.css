@@ -6861,7 +6861,8 @@ form#formCalcularFrete {
 }
 
 .menu-user-logged .botao {
-   height: 40px !important;
+   height: 48px !important;
+   border: 1px solid #ffffff10;
 }
 
 .menu-user-logged.btn-group:hover .dropdown-menu {
@@ -7424,12 +7425,12 @@ tr.bg-dark.tr-checkout-total {
 .pagina-pedido-listar .caixa-dados .titulo {
    padding: 16px 0;
    font-size: 16px;
-   color: var(--color-black) !important;
+   color: var(--color-white) !important;
 }
 
 .tabela-pedidos *:not(.text-error) {
    font-size: 14px;
-   color: #000;
+   color: #fff;
    font-weight: 400;
 }
 
@@ -7497,6 +7498,7 @@ tr.bg-dark.tr-checkout-total {
 
 .buscar-pedidos label {
    margin: 0;
+   color: #fff
 }
 
 input#id_numero_pedido {
