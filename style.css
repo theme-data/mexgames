@@ -5991,6 +5991,7 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
    padding: 8px 12px;
    border-radius: 8px;
    height: 48px !important;
+}
 
 .cat-filter i:before {
 	content: "";
