@@ -9655,12 +9655,19 @@ div#modal-pagamento.ativo {
 	background-size: 100%;
 }
 
+/* Ofertas */ 
+.pagina-categoria.categoria-23428405 {
+	background: var(--bg-store-color) url(https://cdn.awsli.com.br/2833/2833026/arquivos/bg-ofertas.jpg) top center no-repeat;
+	background-size: 100%;
+}
+
 .pagina-categoria.categoria-23410121 .secao-principal,
 .pagina-categoria.categoria-23410120 .secao-principal,
 .pagina-categoria.categoria-23410115 .secao-principal,
 .pagina-categoria.categoria-23410117 .secao-principal,
 .pagina-categoria.categoria-23410124 .secao-principal,
-.pagina-categoria.categoria-23410123 .secao-principal {
+.pagina-categoria.categoria-23410123 .secao-principal,
+.pagina-categoria.categoria-23428405 .secao-principal {
 		margin-top: 100px;
 }
 
