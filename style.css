@@ -7474,9 +7474,10 @@ tr.bg-dark.tr-checkout-total {
 .pagina-pedido-listar .caixa-dados h5.titulo {
    margin: 0;
    padding: 16px;
-   border: 1px solid #d8d8d8;
+   border: 0;
    border-top: 0;
    border-radius: 0 0 8px 8px;
+   background: #2a3319;
 }
 
 .pagina-pedido-listar .caixa-dados form .span7 {
@@ -7587,7 +7588,7 @@ hr {
 .caixa-dados .caixa-sombreada {
    box-shadow: none;
    border-radius: 8px;
-   border: 1px solid #d8d8d8;
+   border: 1px solid #d8d8d820;
    overflow: hidden;
 }
 
