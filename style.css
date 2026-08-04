@@ -4841,7 +4841,7 @@ input[type="password"] {
   }
   
   .menu.superior .nivel-um>li:hover > a strong {
-      color: #000!important;
+      color: #fff!important;
   }
   
   .menu.superior .nivel-um>li:hover .nivel-dois:before {
@@ -5984,12 +5984,13 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 
 .cat-filter {
    gap: 8px;
-   background: none !important;
+   background: #292b26 !important;
    box-shadow: none !important;
-   border: 0 !important;
-   color: #000 !important;
-   padding: 8px 0px;
-}
+   border: 1px solid #ffffff10 !important;
+   color: #fff !important;
+   padding: 8px 12px;
+   border-radius: 8px;
+   height: 48px !important;
 
 .cat-filter i:before {
 	content: "";
@@ -6002,6 +6003,7 @@ input#calcularFrete, input#usarCupom, #btn-cupom, #btn-frete {
 
 .cat-filter i {
 	margin: 0;
+   display: none;
 }
 
 .append-filter-cat {
@@ -6287,11 +6289,15 @@ input#id_politica_privacidade {
 
 .menu-user-logged .botao {
    font-size: 16px !important;
-   color: var(--color-black) !important;
+   color: var(--color-white) !important;
    background: none !important;
    border: 0 !important;
    box-shadow: none !important;
    padding: 0;
+}
+
+.menu-user-logout {
+   color: #f87070;
 }
 
 .menu-user-logged {
@@ -7303,7 +7309,7 @@ tr.bg-dark.tr-checkout-total {
    display: flex;
    gap: 0;
    padding: 8px;
-   background: #f1f1f1;
+   background: #1C2210;
    border-radius: 4px;
    margin-bottom: 20px;
    width: fit-content;
@@ -7319,6 +7325,7 @@ tr.bg-dark.tr-checkout-total {
    font-weight: 500;
    box-shadow: none;
    background: none;
+   color: #fff;
 }
 
 .abas-conta li a i {
