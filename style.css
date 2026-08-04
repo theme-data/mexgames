@@ -6479,7 +6479,7 @@ form#formCalcularFrete {
 }
 
 .subtotal span, .total span {
-   color: var(--color-black);
+   color: var(--color-white);
    font-size: 14px;
 }
 
@@ -6489,7 +6489,7 @@ form#formCalcularFrete {
 
 .subtotal strong, .total strong {
    font-size: 16px;
-   color: var(--color-black);
+   color: var(--color-white);
    font-weight: 500;
    margin: 0;
    letter-spacing: 0px;
@@ -7296,7 +7296,7 @@ tr.bg-dark.tr-checkout-total {
 }
 
 .abas-conta li a:hover {
-   color: #000;
+   color: #fff;
 }
 
 #id_email_recuperar_senha {
@@ -7555,6 +7555,7 @@ fieldset .span12 p {
 .pagina-pedido .caixa-dados h2.titulo {
    font-size: 20px;
    margin: 0px;
+   color: #fff;
 }
 
 .pagina-pedido .abas-conteudo .row-fluid > .caixa-info {
