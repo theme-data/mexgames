@@ -9762,3 +9762,17 @@ div#modal-pagamento.ativo {
 .pagina-pedido-finalizado .caixa-dados ul.caixa-info li {
    color: #000;
 }
+
+.popover-title {
+   background: #1C2210;
+   border: 0;
+}
+
+.popover-content {
+   border: 0;
+   background: #4d5a33;
+}
+
+.popover {
+   border: 1px solid #ffffff10!important;
+}
