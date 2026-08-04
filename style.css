@@ -9658,6 +9658,22 @@ div#modal-pagamento.ativo {
 	background-size: 100%;
 }
 
+@media screen and (max-width: 767px) {
+
+   .pagina-categoria.categoria-23410121,
+   .pagina-categoria.categoria-23410120,
+   .pagina-categoria.categoria-23428405,
+   .pagina-categoria.categoria-23410115,
+   .pagina-categoria.categoria-23410117,
+   .pagina-categoria.categoria-23410124,
+   .pagina-categoria.categoria-23410123,
+   .pagina-categoria.categoria-23428405 {
+      background-size: 180%;
+      background-position-y: 64px;
+   }
+
+}
+
 @media screen and (min-width: 768px) {
 	
 .conteudo .ordenar-listagem.topo .row-fluid .span6 {
