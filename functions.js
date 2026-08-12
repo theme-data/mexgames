@@ -1421,7 +1421,7 @@ $(document).ready(function () {
     
             <div class="h-video-frame">
                 <iframe
-                    src="https://www.youtube.com/embed/PqRMV36VPnU?si=KYHnzDq4U12so5CI"
+                    src="https://www.youtube.com/embed/n2lHwNpLhCo?si=Z9QLkYe_Cupy1NFA"
                     title="Como comprar na Mex Games"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
