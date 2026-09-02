@@ -35,7 +35,7 @@ $('#rodape .institucional > .conteiner > .row-fluid > .span9 > .row-fluid').appe
     <span class="titulo">Atendimento</span>
     <p>
         <div><img alt"Horário de atendimento" src="https://cdn.awsli.com.br/2830/2830294/arquivos/footer-clock.svg"/><div><strong>Horário de atendimento</strong> <span>
-        Segunda a sexta: 11:30 ás 22:00h <br>
+        Segunda a sexta: 10:00 ás 22:00h <br>
         Sabado: 10:00h ás 18:00h <br>
         Domingo e Feriado: Fechado
 </span></div></div>
@@ -591,7 +591,7 @@ $(document).on('click', '.btn-mais', function() {
                     <div>
                         <strong>Horário de atendimento</strong>
                         <span>
-                            Segunda a sexta: 11:30 ás 22:00h <br>
+                            Segunda a sexta: 10:00 ás 22:00h <br>
                             Sabado: 10:00h ás 18:00h <br>
                             Domingo e Feriado: Fechado
                         </span>
@@ -630,7 +630,7 @@ $(document).on('click', '.btn-mais', function() {
                                 <div>
                                     <strong>Horário de atendimento</strong>
                                     <span>
-                                        Segunda a sexta: 11:30 ás 22:00h <br>
+                                        Segunda a sexta: 10:00 ás 22:00h <br>
                                         Sabado: 10:00h ás 18:00h <br>
                                         Domingo e Feriado: Fechado
                                     </span>
@@ -777,7 +777,7 @@ $(document).on('click', '.btn-mais', function() {
                     <img alt="Horário de atendimento" src="https://cdn.awsli.com.br/2830/2830294/arquivos/float-clock.svg"/>
                     <div>
                       <strong>Horário de atendimento</strong>
-                      <span>Segunda a sexta: 11:30 ás 22:00h <br>
+                      <span>Segunda a sexta: 10:00 ás 22:00h <br>
                             Sabado: 10:00h ás 18:00h <br>
                             Domingo e Feriado: Fechado
                         </span>
